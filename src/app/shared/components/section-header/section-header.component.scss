@@ -1,0 +1,19 @@
+.section-header {
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  max-width: 760px;
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  &__lead {
+    color: var(--color-text-muted);
+  }
+}

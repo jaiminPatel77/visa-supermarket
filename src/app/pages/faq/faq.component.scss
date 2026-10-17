@@ -1,0 +1,21 @@
+.faq-page-section {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-bottom: clamp(3.5rem, 6vw, 6.5rem);
+}
+
+.faq-page-header {
+  max-width: 780px;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__lead {
+    margin-bottom: 0;
+  }
+}
+
+.faq-page-content {
+  max-width: 860px;
+}
