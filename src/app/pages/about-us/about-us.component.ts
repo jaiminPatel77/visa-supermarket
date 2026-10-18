@@ -35,12 +35,6 @@ import { LogoComponent } from '../../shared/components/logo/logo.component';
             <span class="eyebrow">Our Background</span>
             <h2 id="story-heading" class="story-grid__title">{{ copy.ourStory.heading }}</h2>
             <p class="lead story-grid__text">{{ copy.ourStory.text }}</p>
-            @if (copy.ourStory.isPlaceholder) {
-              <div class="story-grid__placeholder-note">
-                <span class="story-grid__badge">Registry Note</span>
-                <span>Corporate archive history subject to formalized verification.</span>
-              </div>
-            }
           </div>
           <div class="story-grid__visual">
             <picture>

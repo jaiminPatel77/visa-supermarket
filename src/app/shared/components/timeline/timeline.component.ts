@@ -17,11 +17,6 @@ import { MilestoneItem } from '../../models/milestones.models';
           <div class="timeline-item__content">
             <div class="timeline-item__header">
               <span class="timeline-item__period">{{ item.period }}</span>
-              @if (item.isPlaceholder) {
-                <span class="timeline-item__badge" title="Pending archival verification">
-                  Chronology Pending
-                </span>
-              }
             </div>
             <h3 class="timeline-item__title">{{ item.title }}</h3>
             <p class="timeline-item__description">{{ item.description }}</p>

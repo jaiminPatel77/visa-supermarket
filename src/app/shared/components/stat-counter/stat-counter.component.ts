@@ -22,11 +22,6 @@ import { StatItem } from '../../models/stats.models';
         <span class="stat-counter__suffix">{{ item.suffix || '' }}</span>
       </div>
       <div class="stat-counter__label">{{ item.label }}</div>
-      @if (item.isPlaceholder) {
-        <span class="stat-counter__badge" title="Pending verified corporate registry confirmation">
-          Registry Pending
-        </span>
-      }
     </div>
   `,
   styleUrl: './stat-counter.component.scss'
