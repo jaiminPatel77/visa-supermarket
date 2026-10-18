@@ -33,9 +33,9 @@ export class FaqComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.updatePageSeo({
-      title: 'Frequently Asked Questions | Eurova Market Group',
+      title: 'Frequently Asked Questions | Kineth Supermarket',
       description:
-        'Answers to frequently asked questions about Eurova Market Group, including store formats, corporate structure, and operating standards.',
+        'Answers to frequently asked questions about Kineth Supermarket, including store formats, corporate structure, and operating standards.',
       path: '/faq'
     });
   }

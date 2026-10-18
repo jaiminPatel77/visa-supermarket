@@ -3,7 +3,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 
 const allowedUrls = [
-  'https://www.eurova-market.eu',
+  'https://kinethsupermarketeu.com',
   'https://schema.org',
   'http://www.w3.org/2000/svg',
   'http://www.sitemaps.org/schemas/sitemap/0.9',
@@ -29,8 +29,12 @@ const forbiddenKeywords = [
   { term: 'facebook', regex: /\bfacebook\b/i },
   { term: 'analytics', regex: /\banalytics\b/i },
   { term: 'gtag', regex: /\bgtag\b/i },
+  { term: 'cookie', regex: /\bcookie\b/i },
   { term: 'geo', regex: /\bgeo\b/i },
-  { term: 'map', regex: /\b(map|maps)\b/i }
+  { term: 'map', regex: /\b(map|maps)\b/i },
+  { term: 'mailto', regex: /mailto:/i },
+  { term: 'tel', regex: /tel:/i },
+  { term: 'eurova', regex: /eurova/i }
 ];
 
 let errorsFound = 0;
@@ -123,11 +127,33 @@ async function checkImagesExif() {
     }
   }
   console.log(`Verified ${checkedCount} WebP images. All EXIF/GPS stripped: 100%.`);
+
+  const brandDir = path.resolve('public/brand');
+  if (fs.existsSync(brandDir)) {
+    const brandFiles = fs.readdirSync(brandDir);
+    let brandCount = 0;
+    for (const file of brandFiles) {
+      if (!file.endsWith('.png') && !file.endsWith('.webp')) continue;
+      brandCount++;
+      const fullPath = path.join(brandDir, file);
+      try {
+        const metadata = await sharp(fullPath).metadata();
+        if (metadata.exif || metadata.gps) {
+          console.error(`[EXIF/GPS LEAK DETECTED] Brand image ${file} contains metadata!`);
+          errorsFound++;
+        }
+      } catch (e) {
+        console.error(`Could not read metadata for ${file}:`, e.message);
+        errorsFound++;
+      }
+    }
+    console.log(`Verified ${brandCount} Brand PNG images. All EXIF/GPS stripped: 100%.`);
+  }
 }
 
 async function run() {
   console.log('--- STARTING LEAK CHECK ---');
-  console.log('1. Scanning src/ directory for forbidden terms and unauthorized URLs...');
+  console.log('1. Scanning src/ directory for forbidden terms, mailto, tel:, Eurova, and unauthorized URLs...');
   scanSrcDirectory(path.resolve('src'));
 
   console.log('2. Scanning prerendered HTML output in dist/eurova-market/browser...');
@@ -142,7 +168,7 @@ async function run() {
     console.error(`FAILED: ${errorsFound} potential leak(s) detected.`);
     process.exit(1);
   } else {
-    console.log('[PASS] All leak checks passed! Zero confidential leaks, zero external runtime requests, zero EXIF/GPS data.');
+    console.log('[PASS] All leak checks passed! Zero confidential leaks, zero mailto/tel:, zero leftover Eurova, zero external runtime requests, zero EXIF/GPS data.');
   }
 }
 

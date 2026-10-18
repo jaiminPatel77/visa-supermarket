@@ -24,40 +24,8 @@
   &__brand {
     display: inline-flex;
     align-items: center;
-    gap: 0.875rem;
     text-decoration: none;
-    color: var(--color-text);
-  }
-
-  &__logo-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  &__brand-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__brand-name {
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: -0.01em;
-    color: var(--color-text);
-    line-height: 1.2;
-  }
-
-  &__brand-tagline {
-    font-size: var(--font-size-xs);
-    color: var(--color-text-muted);
-    line-height: 1.2;
-    display: none;
-
-    @media (min-width: 640px) {
-      display: block;
-    }
+    line-height: 1;
   }
 
   &__nav {

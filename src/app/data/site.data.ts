@@ -1,9 +1,14 @@
 import { BrandData } from '../shared/models/site.models';
+import { SITE_CONFIG } from '../core/site.config';
 
 // TODO: PLACEHOLDER - replace with confirmed corporate legal identity and brand guidelines
 export const BRAND_DATA: BrandData = {
-  name: 'EUROVA MARKET GROUP',
-  tagline: 'Everyday retail. Built around people.',
+  brandShort: SITE_CONFIG.brandShort,
+  brandFull: SITE_CONFIG.brandFull,
+  descriptor: SITE_CONFIG.descriptor,
+  tagline: SITE_CONFIG.tagline,
+  domainName: SITE_CONFIG.domainName,
+  siteUrl: SITE_CONFIG.siteUrl,
   copyrightYear: 2026,
   isPlaceholder: true
 };
@@ -14,7 +19,7 @@ export const SITE_COPY = {
   },
   home: {
     hero: {
-      eyebrow: 'EUROVA MARKET GROUP',
+      eyebrow: 'KINETH SUPERMARKET | EUROPEAN SUPERMARKET GROUP',
       heading: 'Retail built for everyday life.',
       text: 'Across our growing network, we operate modern grocery stores, supermarkets and warehouse-format stores designed around quality, accessibility and everyday value.',
       exploreStoresLabel: 'Explore Our Stores',
@@ -25,12 +30,12 @@ export const SITE_COPY = {
     intro: {
       eyebrow: 'Our Retail Footprint',
       heading: 'A retail group built for communities.',
-      lead: 'Eurova Market Group brings together multiple retail formats under one shared approach: dependable everyday shopping, thoughtfully designed stores and consistently high operating standards.'
+      lead: 'Kineth Supermarket brings together multiple retail formats under one shared approach: dependable everyday shopping, thoughtfully designed stores and consistently high operating standards.'
     },
     formats: {
       eyebrow: 'Retail Network',
       heading: 'Three formats. One standard.',
-      lead: 'Our formats are tailored to match community and shopping dynamics while adhering to rigorous operational consistency.'
+      lead: 'Kineth formats are tailored to match community and shopping dynamics while adhering to rigorous operational consistency.'
     },
     brandMessage: {
       heading: 'Committed to dependable retail across European communities.',
@@ -48,11 +53,12 @@ export const SITE_COPY = {
     intro: 'Our retail network operates through three distinct formats, allowing us to serve different shopping needs while maintaining consistent standards across the group.'
   },
   aboutUs: {
+    eyebrow: 'KINETH SUPERMARKET | EUROPEAN SUPERMARKET GROUP',
     heading: 'Built for everyday retail.',
     ourStory: {
       heading: 'Our Story',
       // TODO: PLACEHOLDER - replace with confirmed group corporate history and foundation archive
-      text: 'Eurova Market Group was created around a simple principle: everyday retail should be dependable, accessible and thoughtfully operated. Over time, the group has expanded through multiple retail formats while maintaining a consistent focus on store quality, operational discipline and customer experience.',
+      text: 'Kineth Supermarket was created around a simple principle: everyday retail should be dependable, accessible and thoughtfully operated. Over time, the group has expanded through multiple retail formats while maintaining a consistent focus on store quality, operational discipline and customer experience.',
       isPlaceholder: true
     },
     vision: {
@@ -74,7 +80,7 @@ export const SITE_COPY = {
   },
   faq: {
     heading: 'Frequently Asked Questions',
-    intro: 'Common inquiries regarding Eurova Market Group, our corporate structure, store formats, and operating standards.'
+    intro: 'Common inquiries regarding Kineth Supermarket, our corporate structure, store formats, and operating standards.'
   },
   notFound: {
     heading: 'Page Not Found',
@@ -83,7 +89,7 @@ export const SITE_COPY = {
     backHomeRoute: '/'
   },
   footer: {
-    description: 'European retail group operating modern grocery stores, supermarkets and warehouse formats.',
-    copyrightNote: 'Eurova Market Group. All rights reserved.'
+    description: 'European Supermarket Group operating modern grocery stores, supermarkets and warehouse formats.',
+    copyrightNote: 'Kineth Supermarket. All rights reserved.'
   }
 };

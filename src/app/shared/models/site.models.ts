@@ -4,8 +4,12 @@ export interface NavItem {
 }
 
 export interface BrandData {
-  name: string;
+  brandShort: string;
+  brandFull: string;
+  descriptor: string;
   tagline: string;
+  domainName: string;
+  siteUrl: string;
   copyrightYear: number;
   isPlaceholder: boolean;
 }

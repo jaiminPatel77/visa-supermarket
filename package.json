@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build && node scripts/postbuild.mjs",
     "generate:images": "node scripts/generate-images.mjs",
+    "process:brand": "node scripts/process-brand-assets.mjs",
     "leak-check": "node scripts/leak-check.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

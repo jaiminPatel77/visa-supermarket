@@ -1,11 +1,13 @@
 export const SITE_CONFIG = {
-  // TODO: PLACEHOLDER - replace with confirmed production domain before public launch
-  siteUrl: 'https://www.eurova-market.eu',
-  brandName: 'EUROVA MARKET GROUP',
-  brandLegalName: 'Eurova Market Group',
+  brandShort: 'Kineth',
+  brandFull: 'Kineth Supermarket',
+  descriptor: 'European Supermarket Group',
   tagline: 'Everyday retail. Built around people.',
+  domainName: 'kinethsupermarketeu',
+  // TODO: confirm the actual domain extension (.com / .eu / other)
+  siteUrl: 'https://kinethsupermarketeu.com',
   defaultMetaDescription:
-    'Eurova Market Group is an established European retail group operating modern grocery stores, supermarkets, and warehouse-format stores across selected EU markets.',
+    'Kineth Supermarket is an established European Supermarket Group operating modern grocery stores, supermarkets, and warehouse-format stores across selected European markets.',
   defaultOgImage: '/images/og-image.webp',
   isPlaceholder: true
 } as const;

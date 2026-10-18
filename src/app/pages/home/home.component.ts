@@ -169,9 +169,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.updatePageSeo({
-      title: 'Eurova Market Group | European Retail Group',
+      title: 'Kineth Supermarket | European Supermarket Group',
       description:
-        'Eurova Market Group is an established European retail group operating modern grocery stores, supermarkets, and warehouse-format stores across selected EU markets.',
+        'Kineth Supermarket is an established European Supermarket Group operating modern grocery stores, supermarkets, and warehouse-format stores across selected European markets.',
       path: '/'
     });
   }

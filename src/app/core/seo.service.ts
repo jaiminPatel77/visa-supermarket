@@ -34,7 +34,7 @@ export class SeoService {
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
     this.metaService.updateTag({ property: 'og:image', content: ogImageUrl });
-    this.metaService.updateTag({ property: 'og:site_name', content: SITE_CONFIG.brandLegalName });
+    this.metaService.updateTag({ property: 'og:site_name', content: SITE_CONFIG.brandFull });
 
     // Twitter Card
     this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });

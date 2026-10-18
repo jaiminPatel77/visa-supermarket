@@ -139,7 +139,7 @@ export const IMAGES_MANIFEST: Record<string, ImageEntry> = {
     src640: '/images/og-image-640.webp',
     src1024: '/images/og-image-1024.webp',
     src1600: '/images/og-image-1600.webp',
-    alt: 'Eurova Market Group corporate overview and retail format preview',
+    alt: 'Kineth Supermarket corporate overview and retail format preview',
     width: 1200,
     height: 630,
     aspectRatio: '1200/630'

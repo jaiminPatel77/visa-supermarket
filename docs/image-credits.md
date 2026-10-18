@@ -1,6 +1,6 @@
 # Image Credits and Manifest
 
-All imagery used across the Eurova Market Group website represents modern, neutral retail environments. In strict accordance with corporate confidentiality requirements:
+All imagery used across the Kineth Supermarket website represents modern, neutral retail environments. In strict accordance with corporate confidentiality requirements:
 - No geographic landmarks, city names, street signs, or coordinates are depicted.
 - No brand logos, commercial trademarks, or branded uniforms are visible.
 - All EXIF, GPS, camera metadata, and timestamps are stripped during processing.
@@ -22,4 +22,4 @@ All imagery used across the Eurova Market Group website represents modern, neutr
 | `store-warehouse-sub1` | `/images/store-warehouse-sub1.webp` | Bulk storage racking and pallet displays in warehouse store environment | Adrian Sulyok via Unsplash (Free Unsplash License) | Neutral Unsplash License (Commercial Use Allowed) |
 | `store-warehouse-sub2` | `/images/store-warehouse-sub2.webp` | Efficient logistics and high-volume dispatch area within warehouse retail format | Chuttersnap via Unsplash (Free Unsplash License) | Neutral Unsplash License (Commercial Use Allowed) |
 | `about-hero-overview` | `/images/about-hero-overview.webp` | Corporate retail operations and supply chain management presentation | John Schnobrich via Unsplash (Free Unsplash License) | Neutral Unsplash License (Commercial Use Allowed) |
-| `og-image` | `/images/og-image.webp` | Eurova Market Group corporate overview and retail format preview | Fikri Rasyid via Unsplash (Free Unsplash License) | Neutral Unsplash License (Commercial Use Allowed) |
+| `og-image` | `/images/og-image.webp` | Kineth Supermarket corporate overview and retail format preview | Fikri Rasyid via Unsplash (Free Unsplash License) | Neutral Unsplash License (Commercial Use Allowed) |

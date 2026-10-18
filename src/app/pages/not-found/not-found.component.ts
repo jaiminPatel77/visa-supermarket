@@ -29,8 +29,8 @@ export class NotFoundComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.updatePageSeo({
-      title: 'Page Not Found | Eurova Market Group',
-      description: 'The requested page could not be located on the Eurova Market Group corporate portal.',
+      title: 'Page Not Found | Kineth Supermarket',
+      description: 'The requested page could not be located on the Kineth Supermarket corporate portal.',
       path: '/404'
     });
   }

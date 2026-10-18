@@ -7,7 +7,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
     period: 'Phase I (TODO: Year)',
     title: 'Foundation',
     description:
-      'Eurova Market Group established its initial neighborhood grocery model focusing on everyday essentials and community retail accessibility.',
+      'Kineth Supermarket established its initial neighborhood grocery model focusing on everyday essentials and community retail accessibility.',
     isPlaceholder: true
   },
   {

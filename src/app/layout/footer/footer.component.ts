@@ -2,24 +2,19 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NAVIGATION_ITEMS } from '../../data/navigation.data';
 import { BRAND_DATA, SITE_COPY } from '../../data/site.data';
+import { LogoComponent } from '../../shared/components/logo/logo.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, LogoComponent],
   template: `
     <footer class="site-footer">
       <div class="container site-footer__container">
-        <!-- Top Row: Brand & One-line Description -->
+        <!-- Top Row: Full Stacked Brand Logo & One-line Description -->
         <div class="site-footer__main">
           <div class="site-footer__brand">
-            <span class="site-footer__logo-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-                <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
-                <path d="M9 9H23V12.5H13.2V14.5H21.5V17.5H13.2V19.5H23.5V23H9V9Z" fill="#FFFFFF"/>
-              </svg>
-            </span>
-            <span class="site-footer__brand-name">{{ brand.name }}</span>
+            <app-logo variant="stacked" theme="dark" />
           </div>
           <p class="site-footer__description">{{ copy.description }}</p>
         </div>
@@ -40,7 +35,7 @@ import { BRAND_DATA, SITE_COPY } from '../../data/site.data';
         <!-- Bottom Row: Copyright Notice -->
         <div class="site-footer__bottom">
           <p class="site-footer__copyright">
-            &copy; {{ currentYear }} {{ brand.name }}. All rights reserved.
+            &copy; {{ currentYear }} {{ brand.brandFull }}.
           </p>
         </div>
       </div>

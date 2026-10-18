@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="#176B45"/>
-  <path d="M9 9H23V12.5H13.2V14.5H21.5V17.5H13.2V19.5H23.5V23H9V9Z" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Navy K and Green Leaf Favicon -->
+  <rect width="48" height="48" rx="10" fill="#13295C"/>
+  <!-- Leaf -->
+  <path d="M12 28C10 21 15 13 22 11C22 17 19 25 12 28Z" fill="#6AA84F"/>
+  <path d="M12 28C15 25 18 20 22 11" stroke="#3E732B" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Bold K -->
+  <path d="M19 13H24V22.2L31.5 13H38L28.2 24.3L38.5 35H32L24 25.8V35H19V13Z" fill="#FFFFFF"/>
 </svg>

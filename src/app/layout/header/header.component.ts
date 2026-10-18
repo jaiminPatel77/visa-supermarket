@@ -13,26 +13,18 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NAVIGATION_ITEMS } from '../../data/navigation.data';
 import { BRAND_DATA } from '../../data/site.data';
 import { MobileNavComponent } from '../mobile-nav/mobile-nav.component';
+import { LogoComponent } from '../../shared/components/logo/logo.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, MobileNavComponent],
+  imports: [RouterLink, RouterLinkActive, MobileNavComponent, LogoComponent],
   template: `
     <header class="site-header" [class.site-header--scrolled]="isScrolled()">
       <div class="container site-header__container">
-        <!-- Wordmark / Brand -->
-        <a routerLink="/" class="site-header__brand" aria-label="Eurova Market Group Homepage">
-          <span class="site-header__logo-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-              <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
-              <path d="M9 9H23V12.5H13.2V14.5H21.5V17.5H13.2V19.5H23.5V23H9V9Z" fill="#FFFFFF"/>
-            </svg>
-          </span>
-          <span class="site-header__brand-text">
-            <span class="site-header__brand-name">{{ brand.name }}</span>
-            <span class="site-header__brand-tagline">{{ brand.tagline }}</span>
-          </span>
+        <!-- Brand Logo Lockup -->
+        <a routerLink="/" class="site-header__brand" aria-label="Kineth Supermarket Homepage">
+          <app-logo variant="horizontal" [priority]="true" />
         </a>
 
         <!-- Desktop Navigation -->

@@ -113,7 +113,7 @@ const images = [
   {
     name: 'og-image',
     sourceUrl: 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1200&h=630&fit=crop&q=85',
-    alt: 'Eurova Market Group corporate overview and retail format preview',
+    alt: 'Kineth Supermarket corporate overview and retail format preview',
     photographer: 'Fikri Rasyid',
     source: 'Unsplash (Free Unsplash License)',
     aspectRatio: '1200/630'
@@ -125,16 +125,16 @@ function createFallbackSvg(img, width, height) {
     <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#176B45" stop-opacity="0.9" />
-          <stop offset="100%" stop-color="#0E4A30" stop-opacity="0.95" />
+          <stop offset="0%" stop-color="#13295C" stop-opacity="0.9" />
+          <stop offset="100%" stop-color="#0D1C40" stop-opacity="0.95" />
         </linearGradient>
       </defs>
       <rect width="100%" height="100%" fill="url(#bg)"/>
-      <circle cx="${width * 0.8}" cy="${height * 0.2}" r="${width * 0.25}" fill="#E8F3ED" opacity="0.08" />
+      <circle cx="${width * 0.8}" cy="${height * 0.2}" r="${width * 0.25}" fill="#EFF3FA" opacity="0.08" />
       <text x="50%" y="46%" font-family="system-ui, sans-serif" font-size="${Math.round(width * 0.035)}px" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">
-        EUROVA MARKET GROUP
+        KINETH SUPERMARKET
       </text>
-      <text x="50%" y="54%" font-family="system-ui, sans-serif" font-size="${Math.round(width * 0.02)}px" font-weight="400" fill="#E8F3ED" opacity="0.85" text-anchor="middle" dominant-baseline="middle">
+      <text x="50%" y="54%" font-family="system-ui, sans-serif" font-size="${Math.round(width * 0.02)}px" font-weight="400" fill="#CBD7E8" opacity="0.85" text-anchor="middle" dominant-baseline="middle">
         ${img.alt}
       </text>
     </svg>
@@ -184,7 +184,7 @@ async function main() {
   // Write image credits documentation
   const creditsContent = `# Image Credits and Manifest
 
-All imagery used across the Eurova Market Group website represents modern, neutral retail environments. In strict accordance with corporate confidentiality requirements:
+All imagery used across the Kineth Supermarket EU website represents modern, neutral retail environments. In strict accordance with corporate confidentiality requirements:
 - No geographic landmarks, city names, street signs, or coordinates are depicted.
 - No brand logos, commercial trademarks, or branded uniforms are visible.
 - All EXIF, GPS, camera metadata, and timestamps are stripped during processing.

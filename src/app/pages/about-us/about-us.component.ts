@@ -7,18 +7,22 @@ import { IMAGES_MANIFEST } from '../../data/images.data';
 import { SectionHeaderComponent } from '../../shared/components/section-header/section-header.component';
 import { ValuesGridComponent } from '../../shared/components/values-grid/values-grid.component';
 import { TimelineComponent } from '../../shared/components/timeline/timeline.component';
+import { LogoComponent } from '../../shared/components/logo/logo.component';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [SectionHeaderComponent, ValuesGridComponent, TimelineComponent],
+  imports: [SectionHeaderComponent, ValuesGridComponent, TimelineComponent, LogoComponent],
   template: `
     <!-- Hero Section -->
     <section class="about-hero-section" aria-labelledby="about-heading">
-      <div class="container">
+      <div class="container about-hero-section__container">
         <div class="about-hero-section__content">
-          <span class="eyebrow">Corporate Overview</span>
+          <span class="eyebrow">{{ copy.eyebrow }}</span>
           <h1 id="about-heading" class="about-hero-section__title">{{ copy.heading }}</h1>
+        </div>
+        <div class="about-hero-section__brand">
+          <app-logo variant="stacked" theme="light" [priority]="true" />
         </div>
       </div>
     </section>
@@ -111,9 +115,9 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit(): void {
     this.seoService.updatePageSeo({
-      title: 'About Eurova Market Group',
+      title: 'About Kineth Supermarket | European Supermarket Group',
       description:
-        'Learn about Eurova Market Group, our corporate mission, values, operational principles, and strategic development across European markets.',
+        'Learn about Kineth Supermarket, our corporate mission, values, operational principles, and strategic development across European markets.',
       path: '/about-us'
     });
   }

@@ -132,9 +132,9 @@ export class OurStoresComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.seoService.updatePageSeo({
-      title: 'Our Store Formats | Eurova Market Group',
+      title: 'Our Store Formats | Kineth Supermarket',
       description:
-        'Explore Eurova Market Group retail formats: community grocery stores, comprehensive supermarkets, and high-efficiency warehouse facilities.',
+        'Explore Kineth Supermarket retail formats: community grocery stores, comprehensive supermarkets, and high-efficiency warehouse facilities.',
       path: '/our-stores'
     });
   }
