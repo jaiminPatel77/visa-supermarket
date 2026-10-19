@@ -4,7 +4,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
   {
     id: 'foundation',
     // TODO: PLACEHOLDER - replace with confirmed founding year
-    period: 'Phase I (TODO: Year)',
+    period: 'Phase I ',
     title: 'Foundation',
     description:
       'Kineth Supermarket established its initial neighborhood grocery model focusing on everyday essentials and community retail accessibility.',
@@ -13,7 +13,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
   {
     id: 'supermarket-expansion',
     // TODO: PLACEHOLDER - replace with confirmed milestone year
-    period: 'Phase II (TODO: Year)',
+    period: 'Phase II ',
     title: 'First supermarket-format expansion',
     description:
       'Extended group reach through full-size supermarkets designed for comprehensive household shopping in well-organized retail spaces.',
@@ -22,7 +22,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
   {
     id: 'warehouse-format',
     // TODO: PLACEHOLDER - replace with confirmed milestone year
-    period: 'Phase III (TODO: Year)',
+    period: 'Phase III ',
     title: 'Introduction of warehouse format',
     description:
       'Inaugurated large-format retail environments to combine scale, operational efficiency and broad merchandise capacity.',
@@ -31,7 +31,7 @@ export const MILESTONES_DATA: MilestoneItem[] = [
   {
     id: 'network-development',
     // TODO: PLACEHOLDER - replace with confirmed milestone year
-    period: 'Phase IV (TODO: Year)',
+    period: 'Phase IV ',
     title: 'Continued network development',
     description:
       'Ongoing disciplined expansion and modernization of store infrastructure across selected European markets.',
